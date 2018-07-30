@@ -332,23 +332,27 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }
-/* line 295, ../sass/index.scss */
+/* line 299, ../sass/index.scss */
 .share .try {
   text-align: center;
 }
-/* line 296, ../sass/index.scss */
+/* line 300, ../sass/index.scss */
 .share .try label {
   color: #fff;
 }
-/* line 300, ../sass/index.scss */
+/* line 304, ../sass/index.scss */
 .share .try input {
   padding-left: .1rem;
   margin-top: .5rem;
   background: #000;
   color: #fff;
 }
-/* line 306, ../sass/index.scss */
+/* line 310, ../sass/index.scss */
 .share .try a {
   display: block;
   background: orange;
@@ -362,7 +366,7 @@ input {
   margin: 1rem auto;
 }
 
-/* line 320, ../sass/index.scss */
+/* line 324, ../sass/index.scss */
 .content {
   width: 100%;
   height: 100%;
@@ -370,7 +374,7 @@ input {
   background-size: 100%;
   position: relative;
 }
-/* line 326, ../sass/index.scss */
+/* line 330, ../sass/index.scss */
 .content .btn-grounp {
   position: absolute;
   bottom: 1rem;
@@ -381,7 +385,7 @@ input {
   display: flex;
   z-index: 10;
 }
-/* line 337, ../sass/index.scss */
+/* line 341, ../sass/index.scss */
 .content .btn-grounp li {
   flex: 1;
   display: flex;
@@ -389,7 +393,7 @@ input {
   justify-content: center;
   position: relative;
 }
-/* line 343, ../sass/index.scss */
+/* line 347, ../sass/index.scss */
 .content .btn-grounp li .play-btn {
   width: 1.6rem;
   height: 1.6rem;
@@ -398,7 +402,7 @@ input {
   background-size: 100%;
   border-radius: 50%;
 }
-/* line 352, ../sass/index.scss */
+/* line 356, ../sass/index.scss */
 .content .btn-grounp .play:before {
   content: "\e673";
   font-family: 'iconfont';
@@ -411,7 +415,7 @@ input {
   opacity: .6;
   z-index: 10;
 }
-/* line 364, ../sass/index.scss */
+/* line 368, ../sass/index.scss */
 .content .btn-grounp .left:before {
   content: "\e66e";
   font-family: 'iconfont';
@@ -424,7 +428,7 @@ input {
   opacity: .6;
   z-index: 10;
 }
-/* line 376, ../sass/index.scss */
+/* line 380, ../sass/index.scss */
 .content .btn-grounp .right:before {
   content: "\e66f";
   font-family: 'iconfont';
@@ -437,7 +441,7 @@ input {
   opacity: .6;
   z-index: 10;
 }
-/* line 388, ../sass/index.scss */
+/* line 392, ../sass/index.scss */
 .content .btn-grounp .zhuan {
   animation: mymove 5s infinite;
   -webkit-animation: mymove 5s infinite linear;
@@ -467,19 +471,19 @@ input {
     transform: rotate(360deg);
   }
 }
-/* line 408, ../sass/index.scss */
+/* line 412, ../sass/index.scss */
 .first-b {
   background: url(../images/content.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
-/* line 412, ../sass/index.scss */
+/* line 416, ../sass/index.scss */
 .second-b {
   background: url(../images/fouth.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
-/* line 416, ../sass/index.scss */
+/* line 420, ../sass/index.scss */
 .third-b {
   background: url(../images/third.jpg) no-repeat;
   background-size: 100% 100%;

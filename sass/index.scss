@@ -292,6 +292,10 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
     .try {
         label {
             color: #fff;
