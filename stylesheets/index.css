@@ -1,0 +1,486 @@
+/*reset*/
+/* line 3, ../sass/index.scss */
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+}
+/* line 11, ../sass/index.scss */
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 18, ../sass/index.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 8, ../sass/index.scss */
+/* line 25, ../sass/index.scss */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 36, ../sass/index.scss */
+/* line 55, ../sass/index.scss */
+input,
+button,
+select,
+textarea,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus,
+li:focus,
+span:focus,
+i:focus,
+img:focus,
+summary {
+  outline: 0;
+}
+
+/* line 52, ../sass/index.scss */
+/* line 73, ../sass/index.scss */
+body {
+  background-attachment: fixed;
+  background: #fff;
+}
+
+/* line 56, ../sass/index.scss */
+/* line 79, ../sass/index.scss */
+ol,
+ul,
+li,
+summary {
+  list-style: none;
+}
+
+/* line 62, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 65, ../sass/index.scss */
+/* line 92, ../sass/index.scss */
+button,
+fieldset,
+img {
+  border: 0;
+}
+
+/* line 70, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+/* line 75, ../sass/index.scss */
+/* line 106, ../sass/index.scss */
+body,
+input,
+textarea,
+select,
+button {
+  font-family: Arial, "Microsoft YaHei";
+  color: #3e3a39;
+}
+
+/* line 84, ../sass/index.scss */
+/* line 116, ../sass/index.scss */
+i {
+  font-style: normal;
+}
+
+/* line 87, ../sass/index.scss */
+/* line 121, ../sass/index.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* line 95, ../sass/index.scss */
+/* line 131, ../sass/index.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 99, ../sass/index.scss */
+/* line 137, ../sass/index.scss */
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+/* line 104, ../sass/index.scss */
+/* line 144, ../sass/index.scss */
+html,
+body,
+button {
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+}
+
+/* line 110, ../sass/index.scss */
+/* line 152, ../sass/index.scss */
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+}
+
+/* line 116, ../sass/index.scss */
+/* line 161, ../sass/index.scss */
+mark {
+  background-color: transparent;
+}
+
+/* line 119, ../sass/index.scss */
+/* line 166, ../sass/index.scss */
+input[type=text],
+input[type=number],
+input[type=submit],
+button,
+textarea {
+  -webkit-appearance: none;
+}
+
+/* line 126, ../sass/index.scss */
+/* line 175, ../sass/index.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #e7e7e7;
+}
+
+/* line 130, ../sass/index.scss */
+/* line 181, ../sass/index.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #e7e7e7;
+}
+
+/* line 134, ../sass/index.scss */
+/* line 187, ../sass/index.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #e7e7e7;
+}
+
+/* line 138, ../sass/index.scss */
+/* line 193, ../sass/index.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #e7e7e7;
+}
+
+/* line 142, ../sass/index.scss */
+/* line 199, ../sass/index.scss */
+q:before,
+q:after {
+  content: "";
+}
+
+/* line 146, ../sass/index.scss */
+/* line 205, ../sass/index.scss */
+i,
+em {
+  font-style: normal;
+}
+
+/* line 150, ../sass/index.scss */
+/* line 211, ../sass/index.scss */
+strong {
+  font-weight: normal;
+}
+
+/* line 153, ../sass/index.scss */
+/* line 216, ../sass/index.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 156, ../sass/index.scss */
+/* line 221, ../sass/index.scss */
+.clearfix:after {
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 229, ../sass/index.scss */
+input {
+  background: inherit;
+  border: 0;
+  background: #fff;
+  opacity: .6;
+  height: .6rem;
+  border-radius: .05rem;
+}
+
+/* line 164, ../sass/index.scss */
+/* line 238, ../sass/index.scss */
+.body-wrapper {
+  max-width: 7.5rem;
+  margin: 0 auto;
+  background: #FBF5F0;
+  background-size: 100%;
+  height: 13.34rem;
+  max-height: 13.34rem;
+  position: relative;
+}
+
+/* line 248, ../sass/index.scss */
+.tip-box {
+  background: #fff;
+  border-radius: .1rem;
+}
+
+/* line 252, ../sass/index.scss */
+.tip-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+/* line 257, ../sass/index.scss */
+.tip-top .tip-txt {
+  background: rgba(0, 0, 0, 0.6);
+  padding: .05rem .3rem;
+  font-size: .4rem;
+}
+
+/* line 263, ../sass/index.scss */
+.tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 273, ../sass/index.scss */
+.tip .tip-p {
+  padding: .4rem .6rem;
+  color: #1e1e1e;
+  font-size: .3rem;
+}
+/* line 278, ../sass/index.scss */
+.tip a {
+  display: block;
+  color: #3385ff;
+  text-align: center;
+  font-size: .28rem;
+  padding: .2rem 0;
+  border-top: 1px solid #ccc;
+}
+
+/* line 287, ../sass/index.scss */
+.share {
+  height: 100%;
+  width: 100%;
+  background: url(../images/share.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 295, ../sass/index.scss */
+.share .try {
+  text-align: center;
+}
+/* line 296, ../sass/index.scss */
+.share .try label {
+  color: #fff;
+}
+/* line 300, ../sass/index.scss */
+.share .try input {
+  padding-left: .1rem;
+  margin-top: .5rem;
+  background: #000;
+  color: #fff;
+}
+/* line 306, ../sass/index.scss */
+.share .try a {
+  display: block;
+  background: orange;
+  width: 5rem;
+  text-align: center;
+  height: .8rem;
+  border-radius: .1rem;
+  line-height: .8rem;
+  color: #fff;
+  font-size: .28rem;
+  margin: 1rem auto;
+}
+
+/* line 320, ../sass/index.scss */
+.content {
+  width: 100%;
+  height: 100%;
+  background: url(../images/content.jpg) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+/* line 326, ../sass/index.scss */
+.content .btn-grounp {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  z-index: 10;
+}
+/* line 337, ../sass/index.scss */
+.content .btn-grounp li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* line 343, ../sass/index.scss */
+.content .btn-grounp li .play-btn {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  background: url(../images/play.jpg) no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+}
+/* line 352, ../sass/index.scss */
+.content .btn-grounp .play:before {
+  content: "\e673";
+  font-family: 'iconfont';
+  font-size: 1rem;
+  color: green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .6;
+  z-index: 10;
+}
+/* line 364, ../sass/index.scss */
+.content .btn-grounp .left:before {
+  content: "\e66e";
+  font-family: 'iconfont';
+  font-size: .8rem;
+  color: green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .6;
+  z-index: 10;
+}
+/* line 376, ../sass/index.scss */
+.content .btn-grounp .right:before {
+  content: "\e66f";
+  font-family: 'iconfont';
+  font-size: .8rem;
+  color: green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .6;
+  z-index: 10;
+}
+/* line 388, ../sass/index.scss */
+.content .btn-grounp .zhuan {
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite linear;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mymove {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mymove {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 408, ../sass/index.scss */
+.first-b {
+  background: url(../images/content.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 412, ../sass/index.scss */
+.second-b {
+  background: url(../images/fouth.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 416, ../sass/index.scss */
+.third-b {
+  background: url(../images/third.jpg) no-repeat;
+  background-size: 100% 100%;
+}

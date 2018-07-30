@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mua!宝宝</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="W_design" content="750">
+	<meta content="宝宝音乐" name="description">
+	<meta name="WT.pa_cmid" content="宝宝音乐">
+	<link rel="stylesheet" href="./stylesheets/swiper.css">
+    <link rel="stylesheet" href="./stylesheets/3swiper.css">
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+</head>
+<body>
+	<div class="body-wrapper">
+		<div class="content">
+			<div class="swiper-container" style="height: 100%;">
+				<div class="swiper-wrapper" style="height: 100%;">
+					<div class="swiper-slide first-b" style="height: 100%;"></div>
+					<div class="swiper-slide second-b" style="height: 100%;"></div>
+					<div class="swiper-slide third-b" style="height: 100%;"></div>
+				</div>
+			</div>
+			<ul class="btn-grounp">
+				<li class="left"></li>
+				<li class="play">
+					<a href="javascript:;" class="play-btn"></a>
+				</li>
+				<li class="right"></li>
+			</ul>
+			<audio style="display:none;" class="audio" src="./images/zhiduanqingc.m4a">
+			您的浏览器不支持 audio 标签。
+			</audio>
+		</div>
+		<div class="tip-top">
+			<div class="tip-txt">
+
+			</div>
+		</div>
+		<div class="share" style="display: none;">
+			<div class="try">
+				<label for="input">
+					诺!
+					<br>说一句情话解锁喽!!!
+				</label>
+				<input id="input" type="text" name="" value="" placeholder="输入解锁命令">
+				<a href="javascript:;" class="unchain">解锁</a>
+			</div>
+		</div>
+		<div class="tip" style="display: none;">
+			<div class="tip-box">
+				<div class="tip-p">
+					算 你 聪 明 喽 ! ! ! !
+				</div>
+				<a href="javascript:;" class="sign-in">进入</a>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/swiper.js"></script>
+  <script src="js/3swiper.js"></script>
+	<script type="text/javascript" src="js/modle.js"></script>
+	<!-- <script type="text/javascript" src="js/js.js"></script> -->
+	<script>
+		var timeNum=4,time;
+		$('.unchain').on('click',function() {
+			console.log($('#input').val());
+			if ($('#input').val('慢慢的我愿意让你当我的一片天')) {
+				$('.tip').show();
+				$('.sign-in').on('click',function(){
+					$('.tip').hide();
+					$('.try').hide();
+					beginTime ();
+				})
+				// $('.share').hide()
+			}
+		})
+		function beginTime () {
+			time = setInterval(clearTime, 1000)
+		}
+		function clearTime () {
+			console.log(timeNum);
+			timeNum--;
+			$('.tip-txt').html(timeNum);
+			if(timeNum==0) {
+				clearInterval(time);
+				$('.share').hide();
+				$('.tip-txt').hide();
+			}
+		}
+		// 音乐播放
+		var playFalsh = true;
+		$('.play').on('click',function(){
+			if (playFalsh) {
+				$('.play a').addClass('zhuan');
+				$('.audio').get(0).play();
+				return playFalsh = false;
+			}else {
+				$('.play a').removeClass('zhuan');
+				$('.audio').pause();
+				return playFalsh = true;
+			}
+		})
+
+		// 滑动相册
+		var mySwiper = new Swiper('.swiper-container',{
+			//其他设置
+			autoplay : 5000,//可选选项，自动滑动
+			loop : true,//可选选项，开启循环
+			tdFlow: {
+				rotate : 50,
+				stretch :0,
+				depth: 100,
+				modifier : 1,
+				shadows : true
+			}
+
+		});
+	</script>
+</body>
+</html>
+<!-- 慢慢的我愿意让你当我的一片天 -->
